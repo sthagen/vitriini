@@ -6,6 +6,7 @@ import sys
 from typing import List, Union, no_type_check
 
 import msgspec
+import vitriini.processor as pro
 from vitriini import (
     APP_NAME,
     APP_VERSION,
@@ -36,6 +37,7 @@ def dump(data, path):
 @no_type_check
 def process(options: argparse.Namespace):
     """Process the command line request."""
-    if options:
-        return 0
-    return 0
+    if not options:
+        return 1
+
+    return pro.cess(options)

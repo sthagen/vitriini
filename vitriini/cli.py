@@ -24,6 +24,27 @@ def parser():
     impl = argparse.ArgumentParser(
         description='Showcase (Finnish: vitriini) some packaged content - guided by conventions.'
     )
+    impl.add_argument(
+        '-v',
+        '--verbose',
+        dest='verbose',
+        action='store_true',
+        help='Be more verbose, maybe',
+    )
+    impl.add_argument(
+        '-d',
+        '--debug',
+        dest='debug',
+        action='store_true',
+        help='Support debugging, maybe',
+    )
+    impl.add_argument(
+        '-i',
+        '--input',
+        dest='archive_path',
+        type=str,
+        help='Archive path',
+    )
     return impl
 
 
@@ -31,7 +52,13 @@ def parser():
 def app(argv=None):
     """Drive the transformation."""
     argv = sys.argv[1:] if argv is None else argv
-    options = parser().parse_args(argv)
+    arg_parser = parser()
+    if not argv:
+        print(f'{APP_NAME} version {APP_VERSION}')
+        arg_parser.print_help()
+        return 0
+
+    options = arg_parser.parse_args(argv)
     return api.process(options)
 
 
