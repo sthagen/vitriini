@@ -25,6 +25,9 @@ ENCODING = 'utf-8'
 ENCODING_ERRORS_POLICY = 'ignore'
 DEFAULT_CONFIG_NAME = '.vitriini.json'
 
+MAX_PACKED_BYTES = int(os.getenv(f'{APP_ENV}_MAX_PACKED_BYTES', '20_000_000'))
+MAX_UNPACKED_BYTES = int(os.getenv(f'{APP_ENV}_MAX_UNPACKED_BYTES', '200_000_000'))
+
 log = logging.getLogger()  # Module level logger is sufficient
 LOG_FOLDER = pathlib.Path('logs')
 LOG_FILE = f'{APP_ALIAS}.log'
@@ -42,6 +45,8 @@ __all__: List[str] = [
     'APP_VERSION',
     'ENCODING',
     'LOG_SEPARATOR',
+    'MAX_PACKED_BYTES',
+    'MAX_UNPACKED_BYTES',
     'TS_FORMAT_PAYLOADS',
     'log',
     'parse_csl',

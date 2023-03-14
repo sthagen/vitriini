@@ -8,6 +8,8 @@ import zipfile
 
 from vitriini import (
     ENCODING,
+    MAX_PACKED_BYTES,
+    MAX_UNPACKED_BYTES,
     log,
 )
 
@@ -19,8 +21,6 @@ SLUG = SAMPLE.replace('_', '-').replace(' ', '-').lower()
 OUT_ROOT = PROCESSING / SLUG
 STAGE = pathlib.Path('staging')
 
-MAX_PACKED_BYTES = 2 << 23
-MAX_UNPACKED_BYTES = 2 << 27
 
 MAGIC_LINE_LIB = '<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>'
 LOCALIZE_LIB_IN = 'https://code.createjs.com/1.0.0/createjs.min.js'
