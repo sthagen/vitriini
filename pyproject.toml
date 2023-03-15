@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "vitriini"
-version = "2023.3.14"
+version = "2023.3.15"
 description = "Showcase (Finnish: vitriini) some packaged content - guided by conventions."
 readme = "README.md"
 authors = [
