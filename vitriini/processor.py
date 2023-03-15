@@ -38,7 +38,7 @@ def cess(options: argparse.Namespace) -> int:
         log.error('No file.')
         return 1
 
-    slug = archive_path.name.replace('_', '-').replace(' ', '-').lower()
+    slug = archive_path.stem.replace('_', '-').replace(' ', '-').lower()
     processing_root = PROCESSING / slug
     today_folder_name = dti.datetime.today().strftime('%Y%m%d')
     log.info(f'Date folder name will be {today_folder_name}')
