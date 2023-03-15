@@ -124,15 +124,16 @@ def cess(options: argparse.Namespace) -> int:
         log.error('Did not find the library import line inside the html file.')
         return 1
 
+    consistent_reference = f'<script src="{js_files[0].name}?'
+    if not any(consistent_reference in line.lower() for line in html_lines):
+        log.error('Did not find the library import line inside the html file.')
+        return 1
+
     for slot, line in enumerate(html_lines):
         if MAGIC_LINE_LIB in line:
             html_lines[slot] = line.replace(LOCALIZE_LIB_IN, LOCALIZE_LIB_OUT)
             log.info(f'Did replace ({LOCALIZE_LIB_IN}) with ({LOCALIZE_LIB_OUT}) in slot {slot}')
-
-    consistent_reference = f'<script src="{js_files[0].name}?'
-    if not any(consistent_reference in line for line in html_lines):
-        log.error('Did not find the library import line inside the html file.')
-        return 1
+            html_lines[slot + 1] = html_lines[slot + 1].lower()  # She said sorry and my name is Rosi
 
     local_out_root = STAGE / today_folder_name / slug
     try:
