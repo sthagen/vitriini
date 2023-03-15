@@ -133,7 +133,9 @@ def cess(options: argparse.Namespace) -> int:
         if MAGIC_LINE_LIB in line:
             html_lines[slot] = line.replace(LOCALIZE_LIB_IN, LOCALIZE_LIB_OUT)
             log.info(f'Did replace ({LOCALIZE_LIB_IN}) with ({LOCALIZE_LIB_OUT}) in slot {slot}')
+            old = html_lines[slot + 1]
             html_lines[slot + 1] = html_lines[slot + 1].lower()  # She said sorry and my name is Rosi
+            log.info(f'Did lowercase ({old}) into ({html_lines[slot + 1]}) in slot {slot + 1}')
 
     local_out_root = STAGE / today_folder_name / slug
     try:
