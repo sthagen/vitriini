@@ -89,13 +89,13 @@ def cess(options: argparse.Namespace) -> int:
     if images_has_folders:
         log.error('Images folder contains folders but shall not.')
         return 1
-    log.info(f'Images folder SHALL NOT contain any folders (SUCC)')
+    log.info('Images folder SHALL NOT contain any folders (SUCC)')
 
     image_files = [path for path in top_level_folders[0].iterdir() if path.is_file()]
     if not image_files:
         log.error('Images folder contains no files but shall contain.')
         return 1
-    log.info(f'Images folder SHALL contain files (SUCC)')
+    log.info('Images folder SHALL contain files (SUCC)')
 
     for path in image_files:
         if path.suffix.lower() not in ('.gif', '.jpg', '.jpeg', '.png', '.svg', '.webp'):

@@ -7,4 +7,3 @@ def test_parser():
 
 def test_app_valid():
     assert cli.app([]) == 0
-
