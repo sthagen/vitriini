@@ -11,6 +11,7 @@ Third party dependencies are documented in the folder [third-party](docs/third-p
 [![wheel](https://img.shields.io/pypi/wheel/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
+[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/vitriini.svg?style=flat)](https://git.sr.ht/~sthagen/vitriini/log)
 
 ## Bug Tracker
 
