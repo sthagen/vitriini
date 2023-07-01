@@ -12,18 +12,19 @@ __version_info__ = tuple(
     e if '-' not in e else e.split('-')[0] for part in __version__.split('+') for e in part.split('.') if e != 'parent'
 )
 
-APP_NAME = 'From the place (Finnish: paikalta) we derive the name.'
-APP_ALIAS = 'vitriini'
-APP_ENV = 'VITRIINI'
-APP_VERSION = __version__
-COMMA = ','
+APP_ALIAS = str(pathlib.Path(__file__).parent.name)
+APP_ENV = APP_ALIAS.upper()
+APP_NAME = locals()['__doc__']
 DEBUG = bool(os.getenv(f'{APP_ENV}_DEBUG', ''))
 VERBOSE = bool(os.getenv(f'{APP_ENV}_VERBOSE', ''))
 QUIET = False
 STRICT = bool(os.getenv(f'{APP_ENV}_STRICT', ''))
 ENCODING = 'utf-8'
 ENCODING_ERRORS_POLICY = 'ignore'
-DEFAULT_CONFIG_NAME = '.vitriini.json'
+DEFAULT_CONFIG_NAME = f'.{APP_ALIAS}.json'
+
+APP_VERSION = __version__
+COMMA = ','
 
 MAX_PACKED_BYTES = int(os.getenv(f'{APP_ENV}_MAX_PACKED_BYTES', '20_000_000'))
 MAX_UNPACKED_BYTES = int(os.getenv(f'{APP_ENV}_MAX_UNPACKED_BYTES', '200_000_000'))
