@@ -7,7 +7,7 @@ Showcase (Finnish: vitriini) some packaged content - guided by conventions.
 Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
-[![downloads](https://pepy.tech/badge/vitriini/month)](https://pepy.tech/project/vitriini)
+[![downloads](https://static.pepy.tech/badge/vitriini/month)](https://pepy.tech/project/vitriini)
 [![wheel](https://img.shields.io/pypi/wheel/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
