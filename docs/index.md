@@ -2,18 +2,15 @@
 
 Showcase (Finnish: vitriini) some packaged content - guided by conventions.
 
-[License: MIT](https://git.sr.ht/~sthagen/vitriini/tree/default/item/LICENSE) |
-[Country of origin: Switzerland](https://git.sr.ht/~sthagen/vitriini/tree/default/item/COUNTRY-OF-ORIGIN) |
-[Export control classification number(ECCN): EAR99](https://git.sr.ht/~sthagen/vitriini/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![license](badges/license-spdx-mit.svg)](https://git.sr.ht/~sthagen/vitriini/tree/default/item/LICENSE)
+[![Country of Origin](badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/vitriini/tree/default/item/COUNTRY-OF-ORIGIN)
+[![Export Classification Control Number (ECCN)](badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/vitriini/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
-Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
-
-[![version](https://img.shields.io/pypi/v/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
-[![downloads](https://static.pepy.tech/badge/vitriini/month)](https://pepy.tech/project/vitriini)
-[![wheel](https://img.shields.io/pypi/wheel/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
-[![supported-versions](https://img.shields.io/pypi/pyversions/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
-[![supported-implementations](https://img.shields.io/pypi/implementation/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
-[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/vitriini.svg?style=flat)](https://git.sr.ht/~sthagen/vitriini/log)
+[![Version](https://img.shields.io/pypi/v/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
+[![Downloads](https://static.pepy.tech/badge/vitriini/month)](https://pepy.tech/project/vitriini)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
+[![Maintenance Status](https://img.shields.io/github/commit-activity/y/sthagen/vitriini.svg?style=flat)](https://git.sr.ht/~sthagen/vitriini/log)
 
 ## Bug Tracker
 
