@@ -10,7 +10,7 @@ Showcase (Finnish: vitriini) some packaged content - guided by conventions.
 [![Version](https://img.shields.io/pypi/v/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
 [![Downloads](https://static.pepy.tech/badge/vitriini/month)](https://pepy.tech/project/vitriini)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/vitriini.svg?style=flat)](https://pypi.python.org/pypi/vitriini/)
-[![Maintenance Status](docs/badges/downloads-per-month.svg)](https://git.sr.ht/~sthagen/vitriini/log)
+[![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/vitriini/log)
 
 ## Bug Tracker
 
