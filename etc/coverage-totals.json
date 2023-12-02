@@ -1,0 +1,18 @@
+{
+  "vitriini": {
+    "version": "7.3.2",
+    "timestamp": "2023-12-02T15:38:56.492883",
+    "branch_coverage": true,
+    "show_contexts": true,
+    "covered_lines": 98,
+    "num_statements": 216,
+    "percent_covered": 35.05154639175258,
+    "percent_covered_display": "35.05",
+    "missing_lines": 118,
+    "excluded_lines": 1,
+    "num_branches": 75,
+    "num_partial_branches": 2,
+    "covered_branches": 4,
+    "missing_branches": 71
+  }
+}
