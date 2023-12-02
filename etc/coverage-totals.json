@@ -1,7 +1,7 @@
 {
   "vitriini": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:38:56.492883",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 16:35:12 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 98,
@@ -13,6 +13,24 @@
     "num_branches": 75,
     "num_partial_branches": 2,
     "covered_branches": 4,
-    "missing_branches": 71
+    "missing_branches": 71,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 5,
+    "files": [
+      "vitriini/__init__.py",
+      "vitriini/api.py",
+      "vitriini/cli.py",
+      "vitriini/processor.py",
+      "vitriini/showcase.py"
+    ],
+    "blake3": "0c8a62b7fb3950796889cf1e0f0d5c9b82c5f5711de5051384f964c40954e91e",
+    "blake2": "45a2121fc3de19e497d520000662e20744bcec815b47c5c4ca1b0dfd9c4e2ab2d8fb5bd3b0fabae1291f5ef022fe0764ae483208fc05bd678a1e9db4309f29a3",
+    "sha512": "43a2be9d611c44d4eed9de01a40303289304b09c284a91f01f564ee6bd24f547d5f5d16d7adc22f1827de7cf7dc6530e6f23f0ab11f6b7340b33ddf6fb132306",
+    "sha384": "45108416c0cb38e9441d8817382ee752ae034d466dedf5a51a53a8d7034c8bb613cdec76f80fa4e333104a0b2254b6a9",
+    "sha256": "6433982fc5c54923fd65e5a827b84939c759d45136fde55543dc81c466c0b8c0",
+    "sha1": "48b84104473da708ade30de968dc34fe20ac9355",
+    "md5": "a0f2c58a576f8978d04a33ce0f7a78dc",
+    "python_version": "3.10.12",
+    "entropy": 5.131341
   }
 }
