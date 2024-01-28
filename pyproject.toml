@@ -7,6 +7,7 @@ name = "vitriini"
 version = "2023.10.22"
 description = "Showcase (Finnish: vitriini) some packaged content - guided by conventions."
 readme = "README.md"
+license = {file = "LICENSE"}
 authors = [
     { name = "Stefan Hagen", email = "stefan@hagen.link" },
 ]
