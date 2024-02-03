@@ -1,4 +1,5 @@
 """Showcase (Finnish: vitriini) some packaged content - guided by conventions."""
+
 import datetime as dti
 import logging
 import os

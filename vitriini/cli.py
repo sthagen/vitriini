@@ -1,21 +1,11 @@
 """Showcase (Finnish: vitriini) some packaged content - guided by conventions - command line interface."""
+
 import argparse
-import json
-import pathlib
-import re
 import sys
-from typing import List, no_type_check
+from typing import no_type_check
 
 import vitriini.api as api
-from vitriini import (
-    APP_NAME,
-    APP_VERSION,
-    ENCODING,
-    LOG_SEPARATOR,
-    QUIET,
-    TS_FORMAT_PAYLOADS,
-    log,
-)
+from vitriini import APP_NAME, APP_VERSION
 
 
 @no_type_check

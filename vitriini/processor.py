@@ -1,4 +1,5 @@
 """Showcase (Finnish: vitriini) some packaged content - guided by conventions - processor."""
+
 import argparse
 import datetime as dti
 import logging

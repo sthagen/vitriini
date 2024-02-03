@@ -1,22 +1,12 @@
 """"Showcase (Finnish: vitriini) some packaged content - guided by conventions - application programming interface."""
+
 import argparse
-import pathlib
-import re
-import sys
-from typing import List, Union, no_type_check
+from typing import no_type_check
 
 import msgspec
 import vitriini.processor as pro
 from vitriini import (
-    APP_NAME,
-    APP_VERSION,
-    COMMA,
     ENCODING,
-    LOG_SEPARATOR,
-    QUIET,
-    TS_FORMAT_PAYLOADS,
-    parse_csl_as_is,
-    log,
 )
 
 
